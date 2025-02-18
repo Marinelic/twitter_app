@@ -1,4 +1,5 @@
 import React from 'react';
+import './Post.css';
 import Avatar from '@mui/material/Avatar';
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
@@ -23,16 +24,15 @@ function Post({
       <div className='post__body'> 
         <div className='post__header'>  
             <div className='post__headerText'>
-                <h3>Kygo{""} <span><VerifiedUserIcon className='post__badge'/> @KygoMusic</span></h3>
+                <h3>Kygo{" "} <span className='post__headerSpecial'><VerifiedUserIcon className='post__badge'/> @KygoMusic</span></h3>
             </div>
 
             <div className='post__headerDescription'>
-                <p>Blablaablaabalaaaaablaaaabla</p>
+                <p>Asia and Australia shows on sale now! </p>
             </div>
         </div>
 
-        <div>
-          <img src='https://media.tenor.com/-ynlGrEzc1MAAAAM/kygo.gif' alt='' />  
+            <img src='https://media.tenor.com/-ynlGrEzc1MAAAAM/kygo.gif' alt='GIF' />
 
           <div className='post__footer'> 
             <ChatBubbleOutlineIcon fontSize="small" />
@@ -40,7 +40,6 @@ function Post({
             <FavoriteBorderIcon fontSize="small" />
             <PublishIcon fontSize="small" />
           </div>
-        </div>
       </div>
     </div>
   )
